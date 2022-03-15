@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 350px;
+    margin: auto;
+}
+
+.card {
+    margin: 2rem 1rem;
+    padding: 20px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.75);
+}
+
+.image-top {
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-top img {
+    width: 100%;
+    display: block;
+}
+
+.image-overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    display: none;
+}
+
+.image-overlay img {
+    position: absolute;
+    width: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.image-top:hover .image-overlay {
+    display: block;
+}
+
+.text-box a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 21px;
+    padding: 20px 0;
+    display: inline-block;
+}
+
+.text-box a:hover {
+    color: hsla(178, 100%, 50%);
+} 
+
+p {
+    color: hsl(215, 51%, 70%);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.eth, .clock {
+    display: flex;
+    align-items: center;
+}
+
+.eth p {
+    color: hsla(178, 100%, 50%);
+    font-weight: 600;
+    padding-left: 7px;
+}
+
+.clock p{
+    padding-left: 7px;
+}
+
+hr {
+    border-color: hsl(215, 32%, 27%);
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.author img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-right: 15px;
+}
+
+.author p a.name {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.author p a.name:hover {
+    color: hsla(178, 100%, 50%);
+}
